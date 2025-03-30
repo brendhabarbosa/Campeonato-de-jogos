@@ -1,0 +1,166 @@
+body{
+    background-color: rgb(247, 243, 243);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+h1{
+    color: rgb(12, 10, 11);
+}
+nav {
+    background-color: #cecece;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid rgb(12, 10, 11); /* Borda inferior decorativa */
+} 
+nav .logo {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    margin: 0; 
+    font-size: 1.5rem; 
+    color: rgb(12, 10, 11)
+}
+
+nav .logo img {
+    width: 40px; 
+    height: 40px; 
+}
+nav ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    gap: 15px; 
+}
+main {
+    display: flex; /* Torna o contêiner principal flexível */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens no topo */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.descricao {
+    display: flex; /* Torna o contêiner flexível */
+    align-items: center; /* Alinha a imagem e o texto no topo */
+    gap: 20px; /* Espaçamento maior entre a imagem e o texto */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    color: rgb(12, 10, 11); /* Cor do texto */
+    margin: 20px 0; /* Espaçamento superior e inferior */
+    line-height: 1.8; /* Altura da linha para melhor legibilidade */
+    background: linear-gradient(90deg, #f0f0f0, #cecece); /* Fundo com gradiente */
+    padding: 20px; /* Espaçamento interno maior */
+    border-left: 5px solid rgb(12, 10, 11); /* Barra decorativa à esquerda */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    font-style: italic; /* Estilo itálico para o texto */
+    text-align: justify; /* Justifica o texto */
+}
+
+.descricao img {
+    width: 180px; /* Ajusta a largura da imagem para um tamanho ideal */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra na imagem */
+    flex-shrink: 0; /* Garante que a imagem não seja redimensionada */
+}
+
+.descricao p {
+    margin: 0; /* Remove margens extras dos parágrafos */
+    text-align: justify; /* Justifica o texto para alinhamento uniforme */
+}
+.descricao time{
+    font-weight: bold;
+}
+#data{
+    background: linear-gradient(90deg, #f0f0f0, #cecece);
+    width: 600px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    border-left: 3px solid rgb(12, 10, 11); /* Borda decorativa à esquerda */
+    font-family: Arial, sans-serif; 
+    font-size: 1.2rem; /* Tamanho da fonte */
+    color: rgb(12, 10, 11); /* Cor do texto */
+    text-align: center; 
+}
+form {
+    width: 100%; /* Largura total do formulário */
+    height: 100%; 
+    background: linear-gradient(90deg, #f0f0f0, #cecece);
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    max-width: 500px; /* Largura máxima do formulário */
+    margin: 20px auto; /* Centraliza o formulário */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os itens do formulário */
+    border-left: 3px solid rgb(12, 10, 11); /* Borda decorativa */
+}
+form label {
+    display: block; /* Faz o rótulo ocupar toda a linha */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: rgb(12, 10, 11); /* Cor do texto */
+}
+
+form input, form select {
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+}
+
+form input:focus, form select:focus {
+    outline: none; /* Remove o contorno padrão */
+    border-color: rgb(12, 10, 11); /* Cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(12, 10, 11, 0.5); /* Sombra ao focar */
+}
+
+form button {
+    background-color: rgb(12, 10, 11); /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave */
+    display: flex;
+    align-items: center; /* Alinha o texto ao centro */
+    justify-content: center; /* Centraliza o texto */
+    gap: 5px; /* Espaçamento entre o ícone e o texto */
+    
+}
+
+form button:hover {
+    background-color: #333; /* Cor mais escura ao passar o mouse */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+    transform: translateY(-2px); /* Levanta o botão ao passar o mouse */
+}
+
+footer {
+    background-color: #cecece; /* Cor de fundo */
+    color: rgb(12, 10, 11); /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    font-size: 1rem; /* Tamanho da fonte */
+    border-top: 3px solid rgb(12, 10, 11); /* Linha decorativa no topo */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra no topo */
+}
+
+footer a {
+    color: rgb(12, 10, 11); /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s ease; /
+}
